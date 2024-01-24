@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Название сайта</title>
+</head>
+<body>
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее
+контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:100%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="1" - двойная рамка толщиной в 1px
+background="images/168.png" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#0000FF" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table
+border="1"
+background="images/168.png"
+bgcolor="#00008B"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём столбец таблицы-->
+<th>
+<!--Содержание ячейки столбца-->
+<h1><label style ="color:#FFFFFF">Регистрация</label></h1>
+<!--Закрываем таблицу-->
+</th>
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+<table
+border="1"
+bgcolor="#0000CD"
+cellpadding="10"
+style="width:100%"><!--; border-radius:5px;-->
+<!--Оформление:
+rowspan="2" - объединяем две ячейки в одну.
+Число объединяемых ячеек по числу ячеек в сайдбаре.
+style="width:80%" - основной контент занимает 80% всей площади,
+оставшиеся 20% для сайдбара-->
+
+<tbody>
+  <tr>
+    <th><label style ="color:#FFFFFF">Введите Ваш email</label></th>
+    <th><input type="email" name="auth_email" placeholder="Введите Ваш email" required ></th>
+  </tr>
+<tbody>
+  <tr>
+    <th><label style ="color:#FFFFFF">Введите Ваш пароль</label></th>
+    <th><input type="password" name="auth_pass" placeholder="Введите пароль" required ></th>
+<tbody>
+  <tr>
+    <th><label style ="color:#FFFFFF">Подтвердите Ваш пароль</label></th>
+    <th><input type="password" name="auth_pass" placeholder="Введите пароль" required ></th>
+  </tr>
+</td>
+<!--ПОДВАЛ-->
+<!--Создаём таблицу подвала-->
+<table
+border="1"
+bgcolor="#00008B"
+height="50"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<tr>
+    <th><button type="button" name="popup-button">Зарегестрироваться</button></th>
+  </tr>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Название сайта</title>
+<link rel="stylesheet" href="{% static "css/style.css" %}" />
+</head>
+<body>
+
+      <style>
+            img
+            {
+                  width: 2vh;
+            }
+      </style>
+
+<!--Меню-->
+<!--
+<nav.animated.flipInX>
+<ul>
+<li>
+<a{:href =< "#"}>
+Главная
+<li>
+<a{:href =< "#"}>
+Вход/Регистрация
+<i.fa.fa-angle-down>
+<ul>
+<li.sub-menu>
+<a{:href =< "#"}>
+      Вход
+<li>
+<a{:href =< "#"}>
+      Регистрация
+
+<nav.animated.flipInX>
+<ul>
+<li>
+<a{:href =< "#"}>
+.fa.fa-home
+<li>
+<a{:href =< "#"}>
+About
+<li.sub-menu>
+<a{:href =< "#"}>
+    Products
+<i.fa.fa-angle-down>
+<ul>
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li.sub-menu>
+<a{:href =< "#"}>
+    Services
+<i.fa.fa-angle-down>
+<ul>
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li>
+<a{:href =< "#"}>
+      Product Item
+<li>
+<a{:href =< "#"}>
+    Contact Us
+-->
+
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее
+контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<!--
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+<a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+<span class="fs-4">Pricing example</span>
+</a>
+<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Features</a>
+<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Enterprise</a>
+<a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Support</a>
+<a class="py-2 link-body-emphasis text-decoration-none" href="#">Pricing</a>
+</nav>
+</div>
+-->
+<table
+border="1"
+align="center"
+rules="rows"
+style="width:100%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="1" - двойная рамка толщиной в 1px
+background="images/168.png" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table
+border="3"
+bgcolor="#00008B"
+cellpadding="10"
+style="width:100%"><!--; border-radius:5px;-->
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём столбец таблицы-->
+<th>
+<!--Содержание ячейки столбца-->
+<h1 style="color:#FFFFFF;">Морской бой</h1>
+<h3> </h3>
+<!--Закрываем таблицу-->
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+
+<table
+border="1"
+bgcolor="#0000CD"
+cellpadding="10"
+style="width:100%"><!--; border-radius:5px;-->
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку
+Оформление:
+rowspan="2" - объединяем две ячейки в одну.
+Число объединяемых ячеек по числу ячеек в сайдбаре.
+style="width:80%" - основной контент занимает 80% всей площади,
+оставшиеся 20% для сайдбара-->
+<td
+rowspan="2"
+style="width:80%">
+<h2 style="color:#FFFFFF;">Описание игры</h2>
+<!--Начинаем абзац с красной строки-->
+<p style="color:#FFFFFF; text-indent:20px">
+На нашем сайте вы сможете сыграть во всемирно известную игру - Морской бой, но по новым правилам! </p>
+
+<p style="color:#FFFFFF; text-indent:20px">Правила предельно просты: ваша задача уничтожить корабли на поле раньше других 
+игроков и получить призы.Каждый игрок получает от администратора определённое количество выстрелов и стреляет
+ по полю в поисках кораблей. При попадании игрок получает приз. </p>
+
+<p style="color:#FFFFFF; text-indent:20px">Для игры необходимо войти в аккаунт или создать его, если вы тут впервые.</p>
+<!--Закрываем ячейку-->
+</td>
+
+<!--САЙДБАР-->
+
+<!--Создаём ячейку сайдбара-->
+<td bgcolor="#0000CD">
+<h3 style="color:#FFFFFF;">Меню</h3>
+<!--Абзац для ссылки на страницу сайта-->
+<p>
+<!--Ссылка на страницу сайта-->
+<a href="reg">
+<!--Картинка маркера перед названием страницы-->
+<img src="https://www.svgrepo.com/show/451234/register.svg">
+<!--Название страницы
+style="margin-left:5px;" - отступ названия от маркера-->
+<span style="margin-left:5px; color:#FFFFFF;">Регистрация/Вход</span></a>
+<!--Закрываем абзац-->
+</p>
+<p>
+<a href="new_game">
+<img src="https://www.svgrepo.com/show/532555/search.svg">
+<span style="margin-left:5px; color:#FFFFFF;">Подключение к новой игре</span;></a>
+</p>
+<p>
+<a href="prizes">
+<img src="https://www.svgrepo.com/show/341529/office-trophy-winner-competition-reward-4.svg">
+<span style="margin-left:5px; color:#FFFFFF;">Ваши призы</span;></a>
+</p>
+<!--Закрываем строку Меню-->
+</td>
+</tr>
+<!--Создаём строку с дополнительной информацией-->
+<tr>
+<!--Ячейка с дополнительной информацией-->
+<td
+bgcolor="#0000CD"
+align="center">
+<h3 style="color:#FFFFFF;">Аккаунт</h3>
+<p style="color:#FFFFFF;"></p>
+<!--Закрываем ячейку с общей информацией
+и таблицу основного контента-->
+</td>
+</tr>
+</table>
+
+<!--ПОДВАЛ-->
+
+<!--Создаём таблицу подвала-->
+<table
+border="3"
+bgcolor="#00008B"
+height="200"
+cellpadding="10"
+style="width:100%"><!--; border-radius:5px;-->
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<h3></h3>
+<!--Закрываем таблицу подвала. При желании в подвале можно
+сделать несколько строк и столбцов-->
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+</table>
+</body>
+</html>
